@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  printf("yo, how do we get this in the browser????\n");
-  return 0;
+  int x = 200;
+  int y = 300;
+  printf("Hello World! Also here's a number: %i\n", x + y);
 }
