@@ -1,9 +1,10 @@
 <html>
 <body>
+  <div id="app">
+  </div>
   <script src="./function.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function(event) {
-
       compiled_sqrt = cwrap('int_sqrt', 'number', ['number'])
       console.log(compiled_sqrt(100));
       console.log(compiled_sqrt(400000000.25));
@@ -11,7 +12,7 @@
       x = 100000;
       new_body = "<h3> square root of " + x + " is " + compiled_sqrt(x) + "</h3>"
 
-      document.body.innerHTML = new_body
+      document.getElementById('app').innerHTML = new_body
     })
   </script>
 </body>
